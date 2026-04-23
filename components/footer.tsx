@@ -36,7 +36,7 @@ export function Footer() {
                 e.preventDefault()
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
-              className="text-xl font-semibold text-foreground tracking-tight"
+              className="text-xl font-windsong font-semibold text-foreground tracking-tight"
             >
               Paula’s Aesthetic
             </a>

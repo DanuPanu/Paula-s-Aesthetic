@@ -9,7 +9,7 @@ export function CTASection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground leading-tight text-balance">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#2a2420] leading-tight text-balance">
               Ota seuraava askel kauneuden polulla
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-lg">

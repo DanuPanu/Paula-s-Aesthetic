@@ -1,21 +1,21 @@
 const testimonials = [
   {
     quote: "Paras kokemus ikinä! Tulokset olivat luonnolliset ja juuri sellaiset kuin toivoin. Suosittelen lämpimästi kaikille.",
-    name: "Maria Virtanen",
+    name: "Janina Sarpaneva",
     role: "Asiakas",
-    location: "Helsinki",
+    location: "Espoo",
   },
   {
     quote: "Ammattitaitoinen ja lämmin vastaanotto. Tunsin oloni turvalliseksi koko hoidon ajan. Palaan varmasti uudelleen.",
-    name: "Anna Korhonen",
+    name: "Anna Hyvärinen",
     role: "Asiakas",
     location: "Espoo",
   },
   {
     quote: "Vihdoin löysin ammattilaisen, johon voin luottaa. Konsultaatio oli perusteellinen ja sain vastaukset kaikkiin kysymyksiini.",
-    name: "Laura Mäkinen",
+    name: "Laura Suvinen",
     role: "Asiakas",
-    location: "Vantaa",
+    location: "Espoo",
   },
 ]
 
@@ -28,7 +28,7 @@ export function TestimonialsSection() {
           <span className="text-xs uppercase tracking-widest text-muted-foreground font-medium">
             Kokemuksia
           </span>
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground mb-6 text-balance">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#2a2420] mb-6 text-balance">
             Asiakkaiden kokemuksia
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">

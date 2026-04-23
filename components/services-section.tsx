@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 // Päivitetty taulukko käyttämään kuvapolkuja ikonien sijaan
 const services = [
   {
-    image: "/images/3.jpg", // Polku public/images/3.jpg
+    image: "/images/1.jpg", // Polku public/images/3.jpg
     title: "Täyteainehoidot",
     description: "Luonnollisia tuloksia hyaluronihappotäyteaineilla. Huulet, kasvonmuotoilu ja ryppyjen täyttö ammattitaidolla.",
   },
@@ -24,14 +24,14 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="palvelut" className="bg-background py-20 lg:py-32">
+    <section id="palvelut" className="bg-blush py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="text-xs uppercase tracking-widest text-muted-foreground font-medium">
             Palvelut
           </span>
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground mt-4 mb-6 text-balance">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#2a2420] mt-4 mb-6 text-balance">
             Mitä tarjoan sinulle
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -45,7 +45,7 @@ export function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group p-8 rounded-3xl border border-border/50 bg-background hover:border-border hover:shadow-lg transition-all duration-300"
+              className="group p-8 rounded-3xl border border-border/50 bg-rose-100 hover:border-border hover:shadow-lg transition-all duration-300"
             >
               {/* Image Container - Neliön muotoinen */}
               <div className="aspect-square rounded-2xl bg-blush border border-border/30 mb-6 overflow-hidden relative">
@@ -59,7 +59,7 @@ export function ServicesSection() {
                 />
               </div>
               
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-semibold text-[#2a2420] mb-3">
                 {service.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

@@ -18,7 +18,7 @@ export function Header() {
               e.preventDefault()
               window.scrollTo({ top: 0, behavior: 'smooth' })
             }}
-            className="text-xl font-semibold text-foreground tracking-tight"
+            className="text-2xl font-semibold font-windsong text-foreground tracking-tight"
           >
             Paula’s Aesthetic
           </a>

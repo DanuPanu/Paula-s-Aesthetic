@@ -5,7 +5,7 @@ export function AboutSection() {
         <span className="text-xs uppercase tracking-widest text-muted-foreground font-medium">
           Esittely
         </span>
-        <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground mb-8 text-balance">
+        <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#2a2420] mb-8 text-balance">
           Ammattitaito ja luottamus
         </h2>
         <div className="space-y-6 text-muted-foreground leading-relaxed">
