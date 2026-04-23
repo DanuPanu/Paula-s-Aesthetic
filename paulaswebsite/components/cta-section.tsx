@@ -1,5 +1,7 @@
+"use client"
+
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Heart } from "lucide-react"
 
 export function CTASection() {
   return (
@@ -18,9 +20,16 @@ export function CTASection() {
             </p>
           </div>
 
-          {/* Image Placeholder */}
-          <div className="aspect-[4/3] rounded-3xl bg-blush border border-border/30 flex items-center justify-center">
-            <Heart className="w-24 h-24 text-foreground/15" strokeWidth={1} />
+          {/* Image Container */}
+          <div className="aspect-[4/3] rounded-3xl bg-blush border border-border/30 overflow-hidden relative">
+            {/* Korvattu Heart-ikoni kuvalla 2.jpg */}
+            <Image 
+              src="/images/2.jpg"
+              alt="Kauneudenhoito"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
         </div>
       </div>

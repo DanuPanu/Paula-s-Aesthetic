@@ -1,21 +1,22 @@
 "use client"
 
+import Image from "next/image" // Tuodaan Image-komponentti
 import { Button } from "@/components/ui/button"
-import { Sparkles, Droplets, MessageCircle } from "lucide-react"
 
+// Päivitetty taulukko käyttämään kuvapolkuja ikonien sijaan
 const services = [
   {
-    icon: Sparkles,
+    image: "/images/3.jpg", // Polku public/images/3.jpg
     title: "Täyteainehoidot",
     description: "Luonnollisia tuloksia hyaluronihappotäyteaineilla. Huulet, kasvonmuotoilu ja ryppyjen täyttö ammattitaidolla.",
   },
   {
-    icon: Droplets,
+    image: "/images/4.jpg", // Polku public/images/4.jpg
     title: "Ihohoidot",
     description: "Tehohoidot ihon uudistamiseen ja heleyttämiseen. Mesoterapia, mikroneulannus ja kemialliset kuorinnat.",
   },
   {
-    icon: MessageCircle,
+    image: "/images/6.jpg", // Polku public/images/5.jpg
     title: "Konsultaatio",
     description: "Maksuton alkukonsultaatio, jossa kartoitamme yhdessä toiveesi ja laadimme sinulle yksilöllisen hoitosuunnitelman.",
   },
@@ -46,10 +47,18 @@ export function ServicesSection() {
               key={service.title}
               className="group p-8 rounded-3xl border border-border/50 bg-background hover:border-border hover:shadow-lg transition-all duration-300"
             >
-              {/* Icon Placeholder */}
-              <div className="aspect-square rounded-2xl bg-blush border border-border/30 mb-6 flex items-center justify-center">
-                <service.icon className="w-12 h-12 text-foreground/40" strokeWidth={1.5} />
+              {/* Image Container - Neliön muotoinen */}
+              <div className="aspect-square rounded-2xl bg-blush border border-border/30 mb-6 overflow-hidden relative">
+                {/* Korvattu ikoni Image-komponentilla */}
+                <Image 
+                  src={service.image}
+                  alt={service.title} // Käytetään palvelun nimeä alt-tekstinä
+                  fill // Täyttää containerin
+                  className="object-cover group-hover:scale-105 transition-transform duration-300" // object-cover ja pieni hover-efekti
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                />
               </div>
+              
               <h3 className="text-xl font-semibold text-foreground mb-3">
                 {service.title}
               </h3>

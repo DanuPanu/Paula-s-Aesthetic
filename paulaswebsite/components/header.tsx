@@ -12,8 +12,15 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo - fixed width for balance */}
-          <a href="#" className="text-xl font-semibold text-foreground tracking-tight lg:w-32">
-            Logo
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault()
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }}
+            className="text-xl font-semibold text-foreground tracking-tight"
+          >
+            Paula’s Aesthetic
           </a>
 
           {/* Desktop Navigation - truly centered */}
@@ -52,7 +59,7 @@ export function Header() {
 
           {/* CTA Button - fixed width for balance */}
           <div className="hidden lg:flex lg:w-32 justify-end">
-            <Button 
+            <Button
               className="rounded-full px-6"
               onClick={() => document.getElementById('yhteystiedot')?.scrollIntoView({ behavior: 'smooth' })}
             >
@@ -111,7 +118,7 @@ export function Header() {
               >
                 Galleria
               </a>
-              <Button 
+              <Button
                 className="rounded-full w-full mt-2"
                 onClick={() => {
                   document.getElementById('yhteystiedot')?.scrollIntoView({ behavior: 'smooth' })
